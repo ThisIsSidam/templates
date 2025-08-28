@@ -2,7 +2,7 @@
 
 To randomly change wallpaper..
 
-1. The Script
+### 1. The Script
 
 The .sh file is the script to randomly change wallpaper.. change the folder path there if you want.
 
@@ -10,7 +10,7 @@ Put it in `~/.local/bin/`.
 
 Run `chmod +x ~/.local/bin/random-wallpaper.sh` to make it executable.
 
-2. The Service
+### 2. The Service
 
 The .service file is the service which runs the script.
 
@@ -20,7 +20,7 @@ Run `systemctl --user daemon-reload` for file rescans.
 
 Run `systemctl --user enable --now random-wallpaper.service` to add the as a service.
 
-3. The Timer
+### 3. The Timer
 
 The .timer file is what runs the service periodically... change the period in that if you want.
 
