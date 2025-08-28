@@ -1,0 +1,7 @@
+# ~/.config/systemd/user/random-wallpaper.service
+[Unit]
+Description=Random wallpaper runner
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/random-wallpaper.sh
