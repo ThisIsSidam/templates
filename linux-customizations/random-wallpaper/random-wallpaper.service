@@ -5,3 +5,4 @@ Description=Random wallpaper runner
 [Service]
 Type=oneshot
 ExecStart=%h/.local/bin/random-wallpaper.sh
+KillMode=process

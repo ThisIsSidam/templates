@@ -12,4 +12,4 @@ choice=${wallpapers[$RANDOM % ${#wallpapers[@]}]}
 
 # Kill old swaybg and set new wallpaper
 pkill swaybg
-swaybg -i "$choice" -m fill &
+setsid swaybg -i "$choice" -m fill >/dev/null 2>&1 &
